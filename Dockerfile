@@ -8,7 +8,6 @@ RUN wget https://releases.hashicorp.com/terraform/1.7.1/terraform_1.7.1_linux_am
 RUN unzip terraform_1.7.1_linux_amd64.zip && rm terraform_1.7.1_linux_amd64.zip
 RUN mv terraform /usr/bin/terraform
 
-RUN pip3 install --upgrade pip
 RUN pip3 install awscli
 RUN node --version
 RUN npm --version
